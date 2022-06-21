@@ -1,0 +1,131 @@
+.footer {
+
+    &__section {
+        background-color: #333A44;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    &__links {
+        max-width: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__link {
+        text-decoration: none;    
+        transition: all 0.8s ease;
+
+        
+       
+    }
+
+    &__link-img {
+        transition: all 0.8s ease;
+
+        path:hover {
+            fill: $lightgrey;
+        }
+    }
+}
+
+
+@media screen  and (max-width: 1100px) {
+    .footer {
+
+        &__section {
+            background-color: #333A44;
+        }
+    
+        &__container {
+            display: flex;
+            align-items: center;
+            padding: 30px 0;
+        }
+    
+        &__links {
+            max-width: 120px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    
+        &__link {
+            text-decoration: none;    
+            transition: all 0.8s ease;
+    
+            
+           
+        }
+    
+        &__link-img {
+            transition: all 0.8s ease;
+    
+            path:hover {
+                fill: $lightgrey;
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 400px) {
+    .footer {
+
+        &__section {
+            background-color: #333A44;
+        }
+    
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            margin-top: 40px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 85px;
+        }
+    
+        &__links {
+            max-width: 120px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    
+        &__link {
+            text-decoration: none;    
+            transition: all 0.8s ease;
+    
+            
+           
+        }
+    
+        &__link-img {
+            transition: all 0.8s ease;
+    
+            path:hover {
+                fill: $lightgrey;
+            }
+        }
+    }
+}

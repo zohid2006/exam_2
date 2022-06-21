@@ -1,0 +1,140 @@
+.button {
+    display: inline-block;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    background-color: $yellow;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 0;
+    max-width: 180px;
+    width: 100%;
+    border: 3px solid transparent;
+    transition: all 0.5s ease;
+
+
+    &:hover {
+        border: 3px solid $yellow;
+        background-color: transparent;
+        color: $yellow;
+    }
+}
+
+
+.header {
+
+    &__section {
+        background-color: #fff;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        padding: 22px 0;
+    }
+
+    &__right {
+        max-width: 940px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 60px;
+    }
+
+    &__nav {
+    }
+
+    &__list {
+        max-width: 250px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dimgrey;
+        transition: all 0.8s ease;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+    &__button {
+    }
+}
+
+
+@media screen  and (max-width: 500px) {
+    .header {
+
+        &__section {
+            background-color: #fff;
+        }
+    
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 22px 0;
+        }
+    
+        &__right {
+            max-width: 940px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 60px;
+        }
+    
+        &__nav {
+        }
+    
+        &__list {
+            display: none;
+        }
+    
+        &__item {
+        }
+    
+        &__link {
+            text-decoration: none;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: $dimgrey;
+            transition: all 0.8s ease;
+    
+            &:hover {
+                color: $yellow;
+            }
+        }
+    
+        &__button {
+            display: none;
+        }
+    }
+}
